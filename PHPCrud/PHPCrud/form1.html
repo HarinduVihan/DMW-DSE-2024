@@ -1,0 +1,36 @@
+<html> 
+<head>
+    <script type="text/javascript">
+    function validateForm() {
+        if(document.myForm.fname.value == "" ) {
+        alert( "Please provide your First Name!" );
+         return false;
+        }
+        if(document.myForm.lname.value == "" ) {
+        alert( "Please provide your Last Name!" );
+         return false;
+        }
+        if(document.myForm.contactno.value == "" ) {
+        alert( "Please provide your Monile Number!" );
+         return false;
+        }
+        if(document.myForm.dob.value == "" ) {
+        alert( "Please provide your DOB!" );
+         return false;
+        }
+        return true;
+    }
+    </script>
+</head>
+
+<body>
+<form action="doInsert.php" method="post" name="myForm" onsubmit="return validateForm()">
+First Name: <input type="text" name="fname"><br><br>
+Last Name: <input type="text" name="lname"><br><br>
+Contact Number: <input type="text" name="contactno"><br><br>
+DOB: <input type="date" name="dob"><br><br>
+<input type="submit">
+</form>
+
+</body>
+</html>

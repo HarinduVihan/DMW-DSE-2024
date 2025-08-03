@@ -1,0 +1,5 @@
+body{background-color:yellow;}
+h1.book {text-align:center;text-decoration:underline;color:#FFA500;font-family:Arial, Helvetica, sans-serif;font-size:30pt;}
+p.date {color:blue;text-align:center;font-Weight:bold;font-size:16pt;}
+p.dis {text-align:center;text-decoration:line-through;font-size:24pt;}
+h1.dis {text-align:center;text-decoration:underline;font-family:Arial;font-style:italic;}

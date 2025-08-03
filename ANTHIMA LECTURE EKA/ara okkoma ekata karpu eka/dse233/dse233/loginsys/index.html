@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Login</title>
+    <script type="text/javascript">
+        function DoValidate(){
+        if(document.LoginForm.username.value == ""){
+            alert("Please enter user name");
+            return false;
+        }
+        if(document.LoginForm.password.value == ""){
+            alert("Please enter password");
+            return false;
+        }
+        return true;
+    }
+    </script>
+</head>
+<body>
+    <h2>Login</h2>
+    <form name="LoginForm" action="DoLogin.php" method="POST" onsubmit="return DoValidate()">
+        Username: <input type="text" name="username"><br><br>
+        Password: <input type="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

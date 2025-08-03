@@ -1,0 +1,57 @@
+body{
+    font-family: sans-serif;
+}
+nav {
+    background: #A2D2DF;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    color: #000000;
+    margin: 0 1em;
+    padding: 10px;
+}
+header{
+    padding: 1em;
+    text-align: center;
+}
+form.home{
+    text-align: center;
+    
+}
+footer.home{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    clear: both;
+    position: relative;
+    height: 100px;
+    margin-top: 300px;
+    background: #A2D2DF;
+    border: 2px solid #BC7C7C;
+    border-radius: 25px;
+}
+div.home{
+    background-color: #F6EFBD;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    width: 40%;
+    border: 3px solid #BC7C7C;
+    padding: 10px;
+}
+main.about{
+    background-color: #F6EFBD;
+    display: block;
+    text-align: center;
+}
+div.contact{
+    background-color: #F6EFBD;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: 3px solid #BC7C7C;
+    padding: 10px;
+    text-align: center;
+}

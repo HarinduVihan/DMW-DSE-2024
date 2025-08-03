@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dinidu sex hub
+        </title>
+        <link rel = "styleSheet" href="style.css">
+        <script type = "text/javascript" src ="jquery-3.7.1.min.js"></script>
+        <script type = "text/javascript">
+            $(document).ready(function()
+            {
+                $("#f1").hide();
+                $("#nav").hide();
+                $("#No").click(function()
+                {
+                    $("#f1").hide("slow");
+                });
+
+                $("#Yes").click(function()
+                {
+                   $("#f1").show("slow");
+                });
+
+                $("#btnsignin").click(function()
+                {
+                    $("#nav").show("slow");
+                });
+                
+                
+            });
+        </script> 
+    </head>
+    <body>
+        
+        <header>
+            <nav id = "nav">
+                <a href = "page1.html">Sign in</a>
+                <a href = "page2.html">Pictures</a>
+                <a href = "page3.html">Videos</a>
+            </nav>
+        </header>
+
+        <main>
+                <h2>Welcome</h2>
+                <p> Are u 18+?</p><br>
+                <button id = "Yes">Yes</button>
+                <button id = "No">No</button>
+                <p>
+
+                <form id = "f1">
+                    Name: <input type = "text" name ="txtName"><br><br>
+                    Email: <input type = "text" name ="txtEmail"><br><br>
+                    Password: <input type = "password" name = "txtpassword"><br><br>
+                    <input type = "submit" name = "btnsignin" Value = "SIGN IN">
+                </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function Dovalidate()
+            {
+                let inputName = document.MyForm.txtName.value;
+                let inputContact = document.MyForm.txtContact.value;
+                let inputEmail = document.MyForm.txtEmail.value;
+             
+                var atpos = inputEmail.indexOf("@");
+                var datpos = inputEmail.lastIndexOf(".");
+
+                    if(inputName == "")
+                {
+                    alert("Please enter a name!");
+                    return false;
+                }
+                if(inputContact == "")
+                {
+                    alert("Please enter a contact!");
+                    return false;
+                }
+                if(isNaN(inputContact))
+                {
+                    alert("please enter number");
+                    return false;
+                }
+                if(inputEmail == "")
+                {
+                    alert("Please enter a Email!");
+                    return false;
+                }
+                if(atpos < 1 || (datpos - atpos) < 2)
+                {
+                     alert("Enter valid email id");
+                     document.signin.txtEmail.focus();
+                     return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="MyForm" onsubmit="return Dovalidate()">
+            Name:<input type="text" name="txtName"><br><br>
+            Contact:<input type="text" name="txtContact"><br><br>
+            Email:<input type="text" name="txtEmail"><br><br>
+            <input type ="submit" value="add">
+
+        </form>
+
+        <script type ="text/javascript">
+
+        </script>
+    </body>
+</html>

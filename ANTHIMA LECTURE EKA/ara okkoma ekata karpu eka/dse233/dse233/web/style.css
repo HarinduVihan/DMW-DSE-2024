@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+nav {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    margin: 1em;
+}
+header, main, footer {
+    padding: 1em;
+    text-align: center;
+}

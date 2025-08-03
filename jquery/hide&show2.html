@@ -1,0 +1,21 @@
+<html><head>
+      <script type = "text/javascript" src = "jquery-3.7.0.min.js"> </script>
+      <script type = "text/javascript">
+         $(document).ready(function() {
+            $("#show").click(function () {
+               $(".mydiv").show(2000);
+            });
+            $("#hide").click(function () {
+               $(".mydiv").hide(2000);
+            });
+         });
+      </script>
+      <style>
+         .mydiv{border:2px solid #666; width:100px; height:100px;}
+      </style>
+   </head><body>
+      <div class = "mydiv"> This is a SQUARE</div>
+      <input id = "hide" type = "button" value = "Hide" />   
+      <input id = "show" type = "button" value = "Show" />
+   </body>
+</html>

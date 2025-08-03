@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function Dovalidate()
+            {
+                    if(document.MyForm.txtName.value == "")
+                {
+                    alert("Please enter a name!");
+                    return false;
+                }
+                if(document.MyForm.txtContact.value == "")
+                {
+                    alert("Please enter a contact!");
+                    return false;
+                }
+                if(document.MyForm.txtEmail.value == "")
+                {
+                    alert("Please enter a Email!");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="MyForm" onsubmit="return Dovalidate()">
+            Name:<input type="text" name="txtName"><br><br>
+            Contact:<input type="text" name="txtContact"><br><br>
+            Email:<input type="text" name="txtEmail"><br><br>
+            <input type ="submit" value="Ok">
+
+        </form>
+
+        <script type ="text/javascript">
+
+        </script>
+    </body>
+</html>

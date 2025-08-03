@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>The jQuery Example</title>
+        <script type = "text/javascript" src = "jquery-3.7.1.min.js"></script>
+        <script type = "text/javascript">
+            $(document).ready(function()
+            {
+                $("#hide").click(function()
+                {
+                    $("#p1").hide("slow");
+                });
+                $("#show").click(function()
+                {
+                    $("#p1").show("slow");
+                });
+
+                $("#hideP2").click(function()
+                {
+                    $("#p2").hide("slow");
+                });
+                $("#showP2").click(function()
+                {
+                    $("#p2").show("slow");
+                });
+               
+            });
+        </script>
+    </head>
+    <body>
+        <p id ="p1">This is paragraph one</p>
+        <p id ="p2">This is paragraph two</p>
+
+        <button id ="hide">p1 Hide</button>
+        <button id ="show">p1 Show</button>
+        <br><br>
+        <button id ="hideP2">p2 Hide</button>
+        <button id ="showP2">p2 Show</button>
+    </body>
+</html>
